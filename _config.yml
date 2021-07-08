@@ -1,7 +1,7 @@
 defaults:
   -
     scope:
-      path: "proto"
+      path: "travel-2.0"
     values:
       altLangPage: "#"
       css: https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css
