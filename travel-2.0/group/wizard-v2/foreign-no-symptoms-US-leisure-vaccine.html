@@ -76,58 +76,54 @@
                 <li>coming from the United States</li>
               </ul>
             </div>
-              <!-- <div class="wb-frmvld" id="services">
-                <form method="get"> 
-                Smart question!
-                  <div id="question2" class="wb-fieldflow" data-wb-fieldflow='{
+
+               <div class="wb-frmvld">
+                  <!-- <form method="get"> -->
+                  <!--Smart question!-->
+                  <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
+                           "noForm":false,
+                     			"renderas":"radio",
+                     			"base": { "live": false },
+                     			"noreqlabel": true,
+                     			"default": { "action": "addClass", "source":"#question2", "class": "hidden" }
+                         }'>
+                  <p>Have you received a complete series of COVID -19 vaccinations?</p>
+                     <ul>
+                        <li data-wb-fieldflow='{ "action": "removeClass", "source":"#question2", "class": "hidden"}'>Pfizer-BioNTech (Comirnaty, tozinameran, BNT162b2)</li>
+                        <!--result-->
+                        <li data-wb-fieldflow='{ "action": "removeClass", "source":"#question2", "class": "hidden"}'>Moderna (mRNA-1273)</li>
+                        <!--result--><li data-wb-fieldflow='{ "action": "removeClass", "source":"#question2", "class": "hidden"}'>AstraZeneca/Covishield (ChAdOx1-S, Vaxzevria, AZD1222, Covishield)</li>
+                        <!--result--><li data-wb-fieldflow='{ "action": "removeClass", "source":"#question2", "class": "hidden"}'>A combination of Pfizer/Moderna/AstaZeneca</li>
+                        <!--result--><li data-wb-fieldflow='{ "action": "removeClass", "source":"#question2", "class": "hidden"}'>Janssen/Johnson &amp; Johnson (Ad26.COV2.S) - single dose</li>
+                        <!--result-->
+                           <li><a href="./answers/foreign-US-none-optional.html">Another vaccine not accepted by Health Canada</a></li>
+                           <li><a href="./answers/foreign-US-none-optional.html">I’m not vaccinated or am only partially vaccinated</a></li>
+                     </ul>
+                  </div>
+                  <!-- </form> -->
+               </div>
+<div class="hidden" id="question2">
+<div class="wb-frmvld">
+   <!-- <form method="get"> -->
+   <!--Smart question!-->
+   <div id="question2" class="wb-fieldflow" data-wb-fieldflow='{
                       "noForm":false,
                       "renderas":"radio",
                       "base": { "live": false }
                     }'>
-                  <p>Have you received a complete series of COVID -19 vaccinations?</p>
+      <p>Did you receive your most recent COVID-19 vaccine dose at least 14 full days before the date you plan to
+      enter Canada?</p>
 
-                                       
-                  <ul>
-                      <li><a href="">Pfizer-BioNTech (Comirnaty, tozinameran, BNT162b2)</a></li>
-                     <li><a href="">Moderna (mRNA-1273)</a></li>
-                    <li><a href="">AstraZeneca/Covishield (ChAdOx1-S, Vaxzevria, AZD1222, Covishield)</a></li>
-                     <li><a href="">A combination of Pfizer/Moderna/AstaZeneca</a></li>
-                     <li><a href="">Janssen/Johnson &amp; Johnson (Ad26.COV2.S) - single dose</a></li>
-                     <li><a href="./answers/foreign-US-none-optional.html">Another vaccine not accepted by Health Canada</a></li>
-                     <li><a href="./answers/foreign-US-none-optional.html">I’m not vaccinated or am only partially vaccinated</a></li>      
-                  </ul>
-                  </div>
-                 </form> 
-               </div> -->
-   <form method="get">
 
-                     <div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
-                     			"renderas":"radio",
-                     			"noForm": true,
-                     			"base": { "live": true },
-                     			"default": { "action": "addClass", "source":"#question1,#question2,#question3,#immediate,#no-entry,#no-entry-extended,#extended", "class": "hidden" }
-                     			}'>
-                  <p>Have you received a complete series of COVID -19 vaccinations?</p>
-                        <ul>
-                           <li data-wb-fieldflow='{"action": "removeClass", "source":"#immediate", "class": "hidden"}'>you're the spouse or
-                              common law partner of the person</li>
-                           <li data-wb-fieldflow='{"action": "removeClass", "source":"#immediate", "class": "hidden"}'>you're the dependent
-                              child of the person, or of the person’s spouse or common-law partner</li>
-                           <li data-wb-fieldflow='{"action": "removeClass", "source":"#immediate", "class": "hidden"}'>you're dependent child
-                              of a dependent child (grandchild) of the person</li>
-                           <li data-wb-fieldflow='{"action": "removeClass", "source":"#immediate", "class": "hidden"}'>you're the parent or
-                              step-parent of the person, or of the person’s spouse or common-law partner</li>
-                           <li data-wb-fieldflow='{"action": "removeClass", "source":"#immediate", "class": "hidden"}'>you're the guardian or
-                              tutor of the person</li>
-                           <!--result-->
-                           <li data-wb-fieldflow='{ "action": "append", "source":"#question2" }'>none of the above (for example, a child who
-                              is no longer dependent, brother, aunt, etc.)</li>
-                           <li><a href="./answers/foreign-US-none-optional.html">Another vaccine not accepted by Health Canada</a></li>
-                           <li><a href="./answers/foreign-US-none-optional.html">I’m not vaccinated or am only partially vaccinated</a></li>
-                     
-                        </ul>
-                     </div>
-                  </form>
+      <ul>
+         <li><a href="./foreign-no-symptoms-US-leisure-vaccine-outside.html">Yes</a></li>
+         <li><a href="./answers/foreign-US-none-optional.html">No</a></li>
+
+      </ul>
+   </div>
+   <!-- </form> -->
+</div>
+</div>
              <details>
                   <summary>Travelling with children</summary>
                   
