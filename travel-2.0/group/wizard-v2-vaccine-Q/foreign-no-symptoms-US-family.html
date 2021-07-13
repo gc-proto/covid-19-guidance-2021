@@ -18,6 +18,7 @@
          <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
          <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
          <link href="../../css/wizard.css" rel="stylesheet">
+
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
          <!-- Write closure template -->
          <script type="text/javascript">
@@ -37,7 +38,7 @@
             		href: "#",
             		text: "Français"
             	}],
-            			breadcrumbs: [{
+            		breadcrumbs: [{
                   title: "Canada.ca",
                   href: "../../en.html"
                }, {
@@ -56,21 +57,22 @@
             });
          </script>
          <main role="main" property="mainContentOfPage" class="container">
-
-                <h1>Find out if you can travel to Canada - Citizen</h1>
+                <h1 property="name" id="wb-cont">Find out if you can travel to Canada - Foreign national without symptoms - U.S. entry</h1>
  
-                
-               <div class="">
+             
+      <div class="">
 
-                  <div class="wiz-choice mrgn-tp-lg">
-
+         <div class="wiz-choice mrgn-tp-lg">
               <p>You indicated that you are:</p>
-              <ul>
-                 <li> a Canadian citizen, a permanent resident of Canada, a person registered under the Indian Act or a protected person</li>
-              </ul> 
 
-              </div>
+                <ul>
+                <li> a foreign national</li>
+                <li> not showing signs and symptoms consistent with COVID-19</li>
+                  <li>coming from the United States</li>
+                <li> reuniting with family in Canada</li>
 
+              </ul>
+            </div>
               <div class="wb-frmvld" id="services">
                 <!-- <form method="get"> -->
                   <!--Smart question!-->
@@ -79,44 +81,86 @@
                       "renderas":"radio",
                       "base": { "live": false }
                     }'>
-                    <p>Are you showing signs and symptoms consistent with COVID-19?</p>
+                    <p>Your family member is a:</p>
                     <ul>
-            			<li><a href="./citizen-symptoms.html">Yes, I have COVID-19 symptoms</a></li>
-            			<li><a href="./citizen.html">No, I don't have COVID-19 symptoms</a></li>
-            			<!-- <li><a href="pharmaceuticals.html">Pharmaceuticals, biologics or vaccines</a></li> -->
-            			<!-- <li><a href="../a-contact-health.html">Other COVID-19 related health product</a></li> -->
+            			<li><a href="./foreign-no-symptoms-family-cit-pr.html">a Canadian citizen, permanent resident of Canada, or a person registered under the <cite>Indian Act</cite></a></li>
+                  <li><a href="./foreign-no-symptoms-US-family-tr.html">a temporary resident in Canada (such as a visitor, international student or temporary worker)</a></li>
+                  <li><a href="./answers/foreign-not-citizen-pr-tr.html">none of the above</a></li>
                     </ul>
                   </div>
                 <!-- </form> -->
               </div>
             </div>
-            <details>
-               <summary>Signs and symptoms of COVID-19</summary>
-               <p>Some of the more commonly reported symptoms include:
-               <ul>
-                  <li>new or worsening cough</li>
-                  <li>shortness of breath or difficulty breathing</li>
-                  <li>a fever (temperature equal to or over 38°C)</li>
-                  <li>feeling feverish</li>
-                  <li>chills</li>
-                  <li>fatigue or weakness</li>
-                  <li>muscle or body aches</li>
-                  <li>new loss of smell or taste</li>
-                  <li>headache</li>
-                  <li>gastrointestinal symptoms (abdominal pain, diarrhea, vomiting)</li>
-                  <li>feeling very unwell<br>
-                  </li>
-               </ul>
+             
+            <details><summary>Definitions</summary>
+               <p>Note: These are not legal definitions.</p>
+
+               <div class="row brdr-bttm mrgn-bttm-md" id="canadian_citizen">
+                  <dt class="col-md-3">Canadian citizen</dt>
+                  <dd class="col-md-9">
+                     <p>A person described as a citizen under the Citizenship Act. This means a person who:</p>
+                     <ul>
+                        <li>is Canadian by birth (either born in Canada or born outside Canada to a Canadian citizen who was themselves
+                           either born in Canada or granted citizenship) <strong>or</strong></li>
+                        <li>has applied for a grant of citizenship and has received Canadian citizenship <a
+                              href="#naturalization">(naturalization)</a>.</li>
+                     </ul>
+                  </dd>
+               </div>
+
+
+               <div class="row brdr-bttm mrgn-bttm-md mrgn-tp-lg" id="permanent_resident">
+                  <dt class="col-md-3">Permanent resident
+                     <p class="small lead">Related term:<br>
+                        Landed immigrant
+                        PR</p>
+                  </dt>
+                  <dd class="col-md-9">
+                           <p>For a more detailed definition, see the <a href="http://laws-lois.justice.gc.ca/eng/acts/I-2.5/page-1.html#h-2">legal
+                                 definition of permanent resident</a>.</p>
+
+                  </dd>
+               </div>
+
+                  <div class="row brdr-bttm mrgn-bttm-md" id="indian_act">
+                     <dt class="col-md-3">Person registered under the <cite>Indian Act</cite>
+                        <p class="small lead">Related term:<br>
+                           Indian status</p>
+                     </dt>
+                     <dd class="col-md-9">The <a href="https://www.sac-isc.gc.ca/eng/1100100032463/1572459644986#chp1">legal status of a person who is registered under the <cite>Indian Act</cite></a>.</dd>
+                  </div>
+
+            <div class="row brdr-bttm mrgn-bttm-md" id="temporary_resident">
+               <dt class="col-md-3">Temporary resident
+                  <p class="small lead">Related terms:<br>
+                     Visitor <br>
+                     Tourist</p>
+               </dt>
+               <dd class="col-md-9">A foreign national who is in Canada legally for a short period. Temporary residents include
+                  students, foreign workers and visitors, such as tourists.
+                  <p>See <a href="#temporary_resident_visa">temporary resident visa</a>.</p>
+               </dd>
+            </div>
+
+            <div class="row brdr-bttm mrgn-bttm-md" id="naturalization">
+               <dt class="col-md-3">Naturalization
+                  <p class="small lead">Related term:<br>
+                     Grant of citizenship</p>
+               </dt>
+               <dd class="col-md-9">The formal process by which a person who is not a Canadian citizen can become a Canadian
+                  citizen. The person must usually become a permanent resident first.</dd>
+            </div>
+
+
             </details>
-
-
+            
             </section>
             <div id="def-preFooter"></div>
             <!-- Write closure template -->
             <script type="text/javascript">
                var defPreFooter = document.getElementById("def-preFooter");
                defPreFooter.outerHTML = wet.builder.preFooter({
-               dateModified: "2020-08-10",
+               dateModified: "2020-05-29",
                showPostContent: true,
                showFeedback: true,
                showShare: true
