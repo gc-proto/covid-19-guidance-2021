@@ -110,10 +110,12 @@
    </div>
    <!-- </form> -->
 </div>
+<!-- leave this out for now, too high risk for constant change - better if there was a content fragment-->
+<!--
 <div>
-   <details> <summary>Vaccines accepted by Health Canada</summary>
+   <details> <span id="authorized-vaccines"><summary>Vaccines accepted by Health Canada</summary></span>
       <div class="container">
-         <p id="authorized-vaccines">Accepted vaccines for fully vaccinated status in Canada :</p>
+         <p >Accepted vaccines for fully vaccinated status in Canada :</p>
          <ul class="fa-ul">
             <li><span class="fa-li fas fa-check text-success"></span>Pfizer (Comirnaty, tozinameran, BNT162b2)</li>
             <li><span class="fa-li fas fa-check text-success"></span>Moderna (mRNA-1273) </li>
@@ -121,6 +123,11 @@
             </li>
             <li><span class="fa-li fas fa-check text-success"></span>Janssen (Johnson & Johnson) - single dose</li>
          </ul>
+         </div>
+         </details>
+         <details>
+            <div class="container">
+               <span id="authorized-vaccines"><summary>Vaccines not accepted by Health Canada</summary></span>
          <p id="authorized-vaccines">Vaccines not currently accepted for fully vaccinated status in Canada:</p>
          <ul class="fa-ul">
             <li><span class="fa-li fas fa-times text-danger"></span>Bharat Biotech (Covaxin, BBV152 A, B, C)</li>
@@ -134,13 +141,10 @@
       </div>   
    </details>
 </div>
+-->
    <!-- </form> -->
 </div>
-             <details>
-                  <summary>Travelling with children</summary>
-                  
-            </details>
-            </div>
+
   
 
 
