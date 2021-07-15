@@ -250,7 +250,7 @@
 					<li><a href="#partial">Travelling with children or dependents who are not fully vaccinated</a></li>
           <li><a href="#determine-fully">Check if you are fully vaccinated</a></li>
 				
-						    <li><a href="#entry-vaccinated">Pre-entry and arrival requirements</a></li>
+						    <li><a href="#entry-vaccinated">Entry requirements for the fully vaccinated exemption</a></li>
     
         
           <li><a href="#troubleshooting">Troubleshooting proof of vaccination in ArriveCAN</a></li>
@@ -260,7 +260,7 @@
 					
 					
 				<h2 id="enter">Find out if you can enter Canada</h2>
-				<p>Travel restrictions on who can enter Canada remain in place.</p>
+				<p>Travel restrictions on who can enter Canada remain in place <mark>even if you are fully vaccinated</mark>.</p>
 				<p>Foreign nationals (including U.S. citizens) coming to Canada for non-essential reasons will be turned away at the border.</p>
 				<p><a href="/travel-covid/travel-restrictions/wizard-start">Find out if you can enter Canada</a></p>
 				
@@ -302,7 +302,7 @@
 	 </p>
 	 
 
-			<p>Children under the age of 18, or dependent adults, who are not fully vaccinated, but who are accompanied by fully vaccinated travellers:</p>
+			<p id="children">Children under the age of 18, or dependent adults, who are not fully vaccinated, but who are accompanied by fully vaccinated travellers:</p>
 			<ul>
 				 <li>must <strong>quarantine</strong> for 14 days <mark>does the whole family?  link to quarantine rules?</mark></li>
 				 <li>must <strong>follow all testing requirements</strong> (unless under the age of 5)</li>
@@ -327,7 +327,7 @@
       
 
 
-          <div class="container">
+          <div class="well">
           <p id="authorized-vaccines">Accepted vaccines:</p></strong>
              <ul class="fa-ul">
                 <li><span class="fa-li fas fa-check text-success"></span>Pfizer-BioNTech (Comirnaty, tozinameran, BNT162b2)</li>
@@ -346,9 +346,11 @@
                 <li><span class="fa-li fas fa-times text-danger"></span>Vector Institute (EpiVacCorona) </li>
                 <li><span class="fa-li fas fa-times text-danger"></span>Other </li>
              </ul>
+						 
+						     <p>The list of accepted vaccines may expand in the future.</p>
           </div>
 
-          <p>The list of accepted vaccines may expand in the future.</p>
+      
 					
 					<h3>Certified translations <mark> this is duplicated in proof remove??</mark></h3>
 					
@@ -383,9 +385,9 @@
 						 
 					</details>
 					
-					<details>
+					<details id="proof">
 						 <summary>Proof of vaccination</summary>
-						 <h3 id="proof">Proof of vaccination</h3>
+					
 						 
 						 <p>You must use ArriveCAN to enter your proof of vaccination, quarantine and travel information (<a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/arrivecan.html">download the mobile app or sign in online</a>)</p>
 						 
@@ -450,7 +452,7 @@
 						 
 					</details>
 					
-					<details>
+					<details id="arrival">
 						 <summary>Arrival test</summary>
 						 <!--GAC: if the single testing page is live, the 'register in advance' link should lead to the 'create-account' anchor, not to 'register'.-->
 						 <p><a href="/travel-covid/travel-restrictions/flying/covid-19-testing-travellers-coming-into-canada#register">Register in advance </a>for your test to save time at the border.</p>
