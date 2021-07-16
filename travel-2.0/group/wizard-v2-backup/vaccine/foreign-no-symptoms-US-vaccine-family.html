@@ -17,7 +17,7 @@
          <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
          <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
          <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
-               <link href="../../css/wizard.css" rel="stylesheet">
+               <link href="../../../css/wizard.css" rel="stylesheet">
 
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
          <!-- Write closure template -->
@@ -57,7 +57,7 @@
             });
          </script>
          <main role="main" property="mainContentOfPage" class="container">
-                <h1 property="name" id="wb-cont">Find out if you can travel to Canada - U.S. citizen or permanent resident</h1>
+                <h1 property="name" id="wb-cont">Find out if you can travel to Canada - Vaccination</h1>
  
              
    <style>
@@ -71,41 +71,69 @@
               <p>You indicated that you are:</p>
 
                 <ul>
-                <li> a foreign national</li>
-                <li> not showing signs and symptoms consistent with COVID-19</li>
+                <li>a citizen or permanent resident of the Unites States</li>
+                <li>not showing signs and symptoms consistent with COVID-19</li>
                 <li>coming from the United States</li>
               </ul>
             </div>
-              <div class="wb-frmvld" id="services">
-                <!-- <form method="get"> -->
-                  <!--Smart question!-->
-                  <div id="question2" class="wb-fieldflow" data-wb-fieldflow='{
+
+
+<mark>new vaccine question</mark>
+
+<div class="wb-frmvld">
+   <!-- <form method="get"> -->
+   <!--Smart question!-->
+   <div id="question2" class="wb-fieldflow" data-wb-fieldflow='{
                       "noForm":false,
                       "renderas":"radio",
                       "base": { "live": false }
                     }'>
-                  <p>Are you a citizen or permanent resident of the United States?</p>
+      <p>Have you been vaccinated for COVID-19</p>
+                     <ul>
+                        <li><a href="../foreign-no-symptoms-US-leisure.html">Yes</a></li>
+                        <!--result-->
+                        <li><a href="../foreign-no-symptoms-US-leisure-vaccine-date.html">No</a></li>
+                        <!--result-->
+                     
+      </ul>
+   </div>
+   <!-- </form> -->
+</div>
+<!-- leave this out for now, too high risk for constant change - better if there was a content fragment-->
+<!--
+<div>
+   <details> <span id="authorized-vaccines"><summary>Vaccines accepted by Health Canada</summary></span>
+      <div class="container">
+         <p >Accepted vaccines for fully vaccinated status in Canada :</p>
+         <ul class="fa-ul">
+            <li><span class="fa-li fas fa-check text-success"></span>Pfizer (Comirnaty, tozinameran, BNT162b2)</li>
+            <li><span class="fa-li fas fa-check text-success"></span>Moderna (mRNA-1273) </li>
+            <li><span class="fa-li fas fa-check text-success"></span> AstraZeneca/COVISHIELD(Vaxzevria, AZD1222)
+            </li>
+            <li><span class="fa-li fas fa-check text-success"></span>Janssen (Johnson & Johnson) - single dose</li>
+         </ul>
+         </div>
+         </details>
+         <details>
+            <div class="container">
+               <span id="authorized-vaccines"><summary>Vaccines not accepted by Health Canada</summary></span>
+         <p id="authorized-vaccines">Vaccines not currently accepted for fully vaccinated status in Canada:</p>
+         <ul class="fa-ul">
+            <li><span class="fa-li fas fa-times text-danger"></span>Bharat Biotech (Covaxin, BBV152 A, B, C)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Cansino (Convidecia, Ad5-nCoV) </li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Gamalaya (Sputnik V, Gam-Covid-Vac)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Sinopharm (BBIBP-CorV, Sinopharm-Wuhan)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Sinovac (CoronaVac, PiCoVacc)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Vector Institute (EpiVacCorona) </li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Other </li>
+         </ul>
+      </div>   
+   </details>
+</div>
+-->
+   <!-- </form> -->
+</div>
 
-                                       
-                  <ul>
-                      <li><a href="./foreign-no-symptoms-US-leisure-vaccine.html">Yes</a></li>
-                     <li><a href="./answers/foreign-US-none-optional.html">No</a></li>
-                  
-                  </ul>
-                  </div>
-                <!-- </form> -->
-               </div>
-           <!--   <details>
-                  <summary>Examples of non-discretionary reasons to travel</summary>
-                   need help with the definition list - this is about entry not about quarantine exemptions 
-                  <ul>
-                     <li>to perform essential work in Canada (with a valid job)</li>
-                     <li>an international student (with a permit)</li>
-                     <li>transiting passengers (must remain in the secure transit area of a Canadian airport to complete their connection)</li>
-                     <li>more...</li>
-                  </ul>
-               </details> -->
-            </div>
   
 
 
