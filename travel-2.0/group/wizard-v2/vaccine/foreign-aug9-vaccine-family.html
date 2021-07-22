@@ -17,7 +17,7 @@
          <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
          <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
          <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
-               <link href="../../css/wizard.css" rel="stylesheet">
+               <link href="../../../css/wizard.css" rel="stylesheet">
 
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
          <!-- Write closure template -->
@@ -47,6 +47,9 @@
                }, {
                   title: "Travel, quarantine and borders",
                   href: "../../travel-covid.html"
+               }, {
+                  title: "Travel restrictions in Canada",
+                  href: "../../group/index.html"
                }],
             	search: true,
             	siteMenu: true,
@@ -54,7 +57,7 @@
             });
          </script>
          <main role="main" property="mainContentOfPage" class="container">
-                <h1 property="name" id="wb-cont">Find out if you can travel to Canada - Foreign national without symptoms - U.S. entry</h1>
+                <h1 property="name" id="wb-cont">Find out if you can travel to Canada - Vaccination</h1>
  
              
    <style>
@@ -68,55 +71,69 @@
               <p>You indicated that you are:</p>
 
                 <ul>
-                <li> a foreign national</li>
-                <li> not showing signs and symptoms consistent with COVID-19</li>
+                <li>a foreign national</li>
                 <li>coming from the United States</li>
+                <li>reuniting with family</li>
               </ul>
             </div>
-    
-              <div class="wb-frmvld" id="services">
-                <!-- <form method="get"> -->
-                  <!--Smart question!-->
-                  <div id="question2" class="wb-fieldflow" data-wb-fieldflow='{
+
+
+<mark>new vaccine question</mark>
+
+<div class="wb-frmvld">
+   <!-- <form method="get"> -->
+   <!--Smart question!-->
+   <div id="question2" class="wb-fieldflow" data-wb-fieldflow='{
                       "noForm":false,
                       "renderas":"radio",
                       "base": { "live": false }
                     }'>
-                  <p>Which best describes you or your primary reason for entry into Canada?</p>
+      <p>Have you been fully vaccinated for COVID-19?</p>
+                     <ul>
+                        <li><a href="./foreign-aug9-vaccine-family-status.html">Yes</a></li>
+                        <!--result-->
+                        <li><a href="../foreign-no-symptoms-US-family.html">No</a></li>
+                        <!--result-->
+                     
+      </ul>
+   </div>
+   <!-- </form> -->
+</div>
+<!-- leave this out for now, too high risk for constant change - better if there was a content fragment-->
+<!--
+<div>
+   <details> <span id="authorized-vaccines"><summary>Vaccines accepted by Health Canada</summary></span>
+      <div class="container">
+         <p >Accepted vaccines for fully vaccinated status in Canada :</p>
+         <ul class="fa-ul">
+            <li><span class="fa-li fas fa-check text-success"></span>Pfizer (Comirnaty, tozinameran, BNT162b2)</li>
+            <li><span class="fa-li fas fa-check text-success"></span>Moderna (mRNA-1273) </li>
+            <li><span class="fa-li fas fa-check text-success"></span> AstraZeneca/COVISHIELD(Vaxzevria, AZD1222)
+            </li>
+            <li><span class="fa-li fas fa-check text-success"></span>Janssen (Johnson & Johnson) - single dose</li>
+         </ul>
+         </div>
+         </details>
+         <details>
+            <div class="container">
+               <span id="authorized-vaccines"><summary>Vaccines not accepted by Health Canada</summary></span>
+         <p id="authorized-vaccines">Vaccines not currently accepted for fully vaccinated status in Canada:</p>
+         <ul class="fa-ul">
+            <li><span class="fa-li fas fa-times text-danger"></span>Bharat Biotech (Covaxin, BBV152 A, B, C)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Cansino (Convidecia, Ad5-nCoV) </li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Gamalaya (Sputnik V, Gam-Covid-Vac)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Sinopharm (BBIBP-CorV, Sinopharm-Wuhan)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Sinovac (CoronaVac, PiCoVacc)</li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Vector Institute (EpiVacCorona) </li>
+            <li><span class="fa-li fas fa-times text-danger"></span>Other </li>
+         </ul>
+      </div>   
+   </details>
+</div>
+-->
+   <!-- </form> -->
+</div>
 
-                                       
-                  <ul>
-                     <li><a href="./foreign-aug9-US-status.html">visits, weddings, leisure, visit or upkeep of property, fishing, or other optional reasons <mark>new Qs</mark></a></li>
-                     <li><a href="./vaccine/foreign-aug9-vaccine-family.html">reuniting or accompanying family (including commited romantic partners)<!-- (matters for U.S. / vs non US) --><mark>duplicate in order to ask vaccine Q instead of no entry</mark> </a></li>
-                     <li><a href="./answers/foreign-US-student.html">international student (including students working in a health field)</a></li>
-                     <li><a href="./answers/foreign-work.html">work activities or employment reasons</a></li>
-                     <li><a href="./answers/foreign-US-approved-perm-res.html">approved permanent resident (who has not yet arrived in Canada)</a></li>
-                     <li><a href="./answers/foreign-medical-treatment.html">receiving essential medical services or treatments (for a condition other than COVID-19) </a></li>                  
-                     <li><a href="./answers/foreign-US-trans-border.html">border crossing for essential everyday functions (daily or regular crossing)</a></li>
-                     <li><a href="./vaccine/foreign-aug9-vaccine-compassion.html">grief and loss (funerals, visit during the final moments of life, etc.)<mark>demo of 2nd option for path fix for vaccine - ask upfront with rescue answers</mark></a></li>
-                     <li><a href="./vaccine/foreign-aug9-vaccine-compassion.html">caring for someone critically ill or who has a valid medical reason (as a non-health professional)<mark>needs same fix as radio above</mark></a></li>
-                     <li><a href="./answers/foreign-sports.html">taking part in amateur sports <mark>answer is wrong if fully vaccinated - maybe just remove? low audience</mark></a></li>
-                     <li><a href="./answers/foreign-french.html">French citizen from St-Pierre et Miquelon<mark>maybe just remove? low audience</mark></a></li>
-                     <!-- <li><a href="./vaccine/foreign-no-symptoms-US-vaccine-other.html">another reason that is not optional (matters for U.S. / vs non US)  </a> -->
-
-
-                  
-                  </ul>
-                  </div>
-                  <mark>deleted "another reason that is not optional"</mark>
-                <!-- </form> -->
-               </div>
-           <!--   <details>
-                  <summary>Examples of non-discretionary reasons to travel</summary>
-                   need help with the definition list - this is about entry not about quarantine exemptions 
-                  <ul>
-                     <li>to perform essential work in Canada (with a valid job)</li>
-                     <li>an international student (with a permit)</li>
-                     <li>transiting passengers (must remain in the secure transit area of a Canadian airport to complete their connection)</li>
-                     <li>more...</li>
-                  </ul>
-               </details> -->
-            </div>
   
 
 
