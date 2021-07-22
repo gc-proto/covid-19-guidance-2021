@@ -10,3 +10,7 @@
 .white-well {
    background-color: white !important;
 }
+
+mark {
+   background-color: yellow !important;
+}
