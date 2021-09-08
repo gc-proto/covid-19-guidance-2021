@@ -6,7 +6,7 @@ defaults:
       altLangPage: "#"
       css: 
       - https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css
-      - https://test.canada.ca/covid-19-guidance/proto/css/wizard.css
+      - https://test.canada.ca/covid-19-guidance-2021/travel-2.0/css/wizard.css
       layout: default
       pageclass: cnt-wdth-lmtd
       script: https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js
