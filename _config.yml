@@ -4,7 +4,9 @@ defaults:
       path: "travel-2.0"
     values:
       altLangPage: "#"
-      css: https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css
+      css: 
+      - https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css
+      - https://test.canada.ca/covid-19-guidance/proto/css/css/wizard.css
       layout: default
       pageclass: cnt-wdth-lmtd
       script: https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js
