@@ -37,6 +37,7 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 	<link href="https://travel.gc.ca/vt/dynamic/eng/covid-19-pd/css/checkboxes.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cra-arc.gc.ca/wet-boew/css/custom/steps.css">
+<link rel="stylesheet" href="cra-fieldflow.css">
 	<!--[if gte IE 9 | !IE ]><!-->
 	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 	<!--<![endif]-->
@@ -292,21 +293,14 @@
 	
 
 			
-	
+		<section class="gcnav-section">
+          
+             <section>
           
 							 <h2 id="determine-fully">Find out if you're ready to board</h2>
 							 <h3>Before travelling, make sure all travellers over 12 years of age:</h3>
-							 
-							 
-							 		<ul>
-							 		
-							 			<li>have received <mark>at least</mark> 2 doses of an accepted vaccine <strong>or</strong> a mix of 2 accepted vaccines 
-							 				
-							 				<ul><li>
-							 		<mark>or at least</mark> 1 dose of the Janssen (Johnson & Johnson) vaccine</li>
-							 	</ul>
-								
-						
+							 <ul>
+							 <li>are fully vaccinated according to the Government of Canada</li>
 							 <li>have no signs or symptoms of COVID-19</li>
 							 <li><strong>have official proof of vaccination </strong>on your phone or on paper when you board </li>
 									 <ul>
@@ -319,9 +313,26 @@
 									 </ul>
 							 </ul>
 							 
-							
-							
-										
+								 <div class="row mrgn-bttm-md mrgn-tp-lg">
+									<div class="col-xs-12">
+											<div class="brdr-lft mrgn-lft-md mrgn-tp-sm">
+													
+													<div class="pstn-lft-xs pstn-tp-xs"><span class="fa-stack fa-fw mrgn-lft-sm text-info"> <span class="fas fa-square fa-stack-2x fa-inverse"></span> 
+														<span class="far fa-user-circle fa-stack-2x"></span></span></div>
+													<h3 class="pull-left mrgn-tp-0 mrgn-lft-lg h3 text-info" id="confirm-registration">Check if you are considered fully vaccinated for travel 
+</h3>
+													<div class="clearfix"></div>
+													<div class="mrgn-lft-lg">
+														<p>You have received:</p>
+														<ul>
+															<li>at least 2 doses of an accepted vaccine<br/>or</li>
+															<li>a mix of 2 accepted vaccines<br/>or</li>
+															<li>at least 1 dose of the Janssen (Johnson & Johnson) vaccine</li>
+														
+</ul>
+	<p class="small">
+		It must be 14 days since your second dose of an accepted vaccine (or single dose of Janssen).<br/>
+</P>
 
 	
 	
@@ -373,6 +384,91 @@
 		</details>
 
 
+
+
+															<div class="wb-frmvld fieldflow-lg">
+																	<form>
+																			<div class="wb-fieldflow" data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;renderas&quot;: &quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}" id="have-acct">
+																					<p>Have you received accepted vaccines?</p>
+																					<ul>
+																							<li> Yes <div class="wb-fieldflow-sub" data-wb-fieldflow="{&quot;renderas&quot;: &quot;radio&quot;, &quot;isoptional&quot;: true, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">
+																											<div class="wb-fieldflow-header">
+																													<p class="wb-fieldflow-label">Has it been 14 days since your second dose of an accepted vaccine (or single dose of Janssen)?</p>
+																											</div>
+																											
+																											<ul>
+																													<li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-1&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">Yes</li>
+																													<li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-2&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">No</li>
+																												
+																											</ul>
+																									</div>
+																							</li>
+																						<li data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-3&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">No</li>
+																					</ul>
+																			</div>
+																	</form>
+															</div>
+														
+																	<div id="answer1-1" class="hidden alert alert-success alert1 provisional">
+																			<p>Great. Your are considered fully vaccinated for travel.</p>
+																</div>
+																	<div id="answer1-2" class="hidden alert alert-warning alert1 provisional">
+																			<p>You do not meet the definition of fully vaccinated until it has been 14 days since your second dose of an accepted vaccine or single dose of the Janssen (Johnson & Johnson) vaccine.</p>
+																	</div>
+																
+																	<div id="answer1-3" class="hidden alert alert-warning alert1 provisional">
+																	<p>You do not meet the definition of fully vaccinated.</p>
+																	
+																	<p>These are reasons why you may not be considered fully vaccinated in Canada.</p>
+																	
+																	<h3>Vaccines not accepted</h3>
+																		<ul class="fa-ul mrgn-tp-md" id="non-authorized-vaccines">
+																			<li><span class="fa-li fas fa-times text-danger"></span>Bharat Biotech (Covaxin, BBV152 A,
+																				B, C)
+																			</li>
+																			<li><span class="fa-li fas fa-times text-danger"></span>Cansino (Convidecia, Ad5-nCoV) </li>
+																			<li><span class="fa-li fas fa-times text-danger"></span>Gamaleya (Sputnik V, Gam-Covid-Vac)
+																			</li>
+																			<li><span class="fa-li fas fa-times text-danger"></span>Sinopharm (BBIBP-CorV,
+																				Sinopharm-Wuhan)
+																			</li>
+																			<li><span class="fa-li fas fa-times text-danger"></span>Sinovac (CoronaVac, PiCoVacc)</li>
+																			<li><span class="fa-li fas fa-times text-danger"></span>Vector Institute (EpiVacCorona)
+																			</li>
+																			<li><span class="fa-li fas fa-times text-danger"></span>Other </li>
+																		</ul>
+
+																		<p>The list of accepted vaccines may expand in the future.</p>
+															
+
+															<h3>Partially vaccinated or have a single booster dose of an acepted vaccine</h3>
+																		<p>You must have received 2 doses of an accepted vaccine, a mix of two accepted vaccines, or the Janssen (Johnson & Johnson) vaccine 
+																			to qualify as a fully vaccinated.
+
+				
+																		</p>
+															
+
+																<h3>Recovered from COVID-19 with only one dose</h3>
+																		<p> If you have recovered from COVID-19, you still need 2 doses of an accepted vaccine, a mix of two accepted vaccines, or the Janssen (Johnson & Johnson) vaccine 
+																			to qualify as a fully vaccinated.
+																		</p>
+															
+																		<p><a href="#medical-exemption">Medical exemptions if you cannot complete your vaccination</a> 
+																		</p>
+																		
+																	</div>
+																	
+																
+																	
+																	
+															</div>
+														
+														
+											
+							
+								
+								</section>
 						
 						
             
