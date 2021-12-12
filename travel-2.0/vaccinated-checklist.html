@@ -252,9 +252,46 @@
 		<p><a
 				href="https://travel.gc.ca/travel-covid/travel-restrictions/covid-vaccinated-travellers-entering-canada#determine-fully">Check
 				if you qualify as a fully vaccinated traveller</a></p>
-		<p>Checklists are not available at this time for travellers from <a
+		<p>Don't use these checklists if you've been in<a
 				href="https://travel.gc.ca/travel-covid/travel-restrictions/omicron-variant#countries">countries with
-				COVID-19 Omicron entry restrictions /a></p>
+				temporary COVID-19 Omicron entry restrictions</a>. </p>
+
+		<div data-wb-urlmapping='{
+					"p=outside-us": { "action": "addClass", "class": "hidden" },
+					"p=us-can": { "action": "addClass", "class": "hidden" }
+				  }' class="wb-frmvld">
+			<!-- <form method="get"> -->
+			<!--Smart question!-->
+			<div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
+						  "noForm":false,
+						  "renderas":"radio",
+						  "base": { "live": false },
+						  "noreqlabel": true,
+						  "default": { "action": "addClass", "source":"#outside-us,#us-can,#short-trip,#long-trip", "class": "hidden" }
+						}'>
+				<p>In the last 14 days, have you been anywhere other than Canada or the
+					U.S.?</p>
+				<ul>
+					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#outside-us", "class": "hidden"}'>Yes</li>
+					<!--result-->
+					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#us-can", "class": "hidden" }'>No I've only been in Canada and/or the U.S.</li>
+				</ul>
+			</div>
+			<!-- </form> -->
+		</div>
+
+
+		<div data-wb-urlmapping='{ "p=outside-us": { "action": "removeClass", "class": "hidden" } }'
+			class="hidden mrgn-bttm-lg" id="outside-us">
+			<p class="wb-fieldflow-label">Are you a Canadian
+				returning to Canada after a short trip
+				where you were away for 72 hours or
+				less?</br>
+				<span class="small">Canadians include: Canadian citizens,
+					those registered under
+					the <cite>Indian Act</cite> and permanent residents. </span></p>
+
+		</div>
 
 		<!--
 		<section class="gcnav-section">
