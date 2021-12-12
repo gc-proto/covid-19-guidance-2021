@@ -252,16 +252,15 @@
 		<p><a
 				href="https://travel.gc.ca/travel-covid/travel-restrictions/covid-vaccinated-travellers-entering-canada#determine-fully">Check
 				if you qualify as a fully vaccinated traveller</a></p>
-		<p>Don't use these checklists if you've been in<a
-				href="https://travel.gc.ca/travel-covid/travel-restrictions/omicron-variant#countries">countries with
-				temporary COVID-19 Omicron entry restrictions</a>. </p>
-
+		<p>If you've been in countries with temporary COVID-19 Omicron entry restrictions, don't use these checklists.
+			<a href="https://travel.gc.ca/travel-covid/travel-restrictions/omicron-variant">Follow the temporary
+				enhanced requirements. </a></p>
+		<!--
 		<div data-wb-urlmapping='{
 					"p=outside-us": { "action": "addClass", "class": "hidden" },
 					"p=us-can": { "action": "addClass", "class": "hidden" }
 				  }' class="wb-frmvld">
-			<!-- <form method="get"> -->
-			<!--Smart question!-->
+
 			<div id="question1" class="wb-fieldflow" data-wb-fieldflow='{
 						  "noForm":false,
 						  "renderas":"radio",
@@ -273,11 +272,11 @@
 					U.S.?</p>
 				<ul>
 					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#outside-us", "class": "hidden"}'>Yes</li>
-					<!--result-->
+	
 					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#us-can", "class": "hidden" }'>No I've only been in Canada and/or the U.S.</li>
 				</ul>
 			</div>
-			<!-- </form> -->
+
 		</div>
 
 
@@ -292,12 +291,20 @@
 					the <cite>Indian Act</cite> and permanent residents. </span></p>
 
 		</div>
+		<div data-wb-urlmapping='{ "p=us-can": { "action": "removeClass", "class": "hidden" } }'
+		class="hidden mrgn-bttm-lg" id="us-can">
+		<p class="wb-fieldflow-label">Are you a Canadian
+			returning to Canada after a short trip
+			where you were away for 72 hours or
+			less?</br>
+			<span class="small">Canadians include: Canadian citizens,
+				those registered under
+				the <cite>Indian Act</cite> and permanent residents. </span></p>
 
-		<!--
-		<section class="gcnav-section">
+	</div>
+-->
 
-			<section>
-				<h2 id="h-1">Get your customized requirements checklist</h2>
+
 				<p>Answer these questions for your fully vaccinated traveller requirements:</p>
 
 				<div class="row mrgn-bttm-md">
@@ -352,9 +359,12 @@
 																			returning to Canada after a short trip
 																			where you were away for 72 hours or
 																			less?</br>
-																			<span class="small">Canadians include: Canadian citizens,
+																			<span class="small">Canadians include:
+																				Canadian citizens,
 																				those registered under
-																				the <cite>Indian Act</cite> and permanent residents. </span></p>
+																				the <cite>Indian Act</cite> and
+																				permanent residents. </span>
+																		</p>
 																	</div>
 
 																	<ul>
@@ -382,9 +392,12 @@
 																returning to Canada after a short trip
 																where you were away for 72 hours or
 																less?</br>
-																<span class="small">Canadians include: Canadian citizens,
+																<span class="small">Canadians include: Canadian
+																	citizens,
 																	those registered under
-																	the <cite>Indian Act</cite> and permanent residents. </span></p>
+																	the <cite>Indian Act</cite> and permanent residents.
+																</span>
+															</p>
 														</div>
 														<ul>
 															<li
@@ -408,7 +421,8 @@
 									</div>
 									<div id="answer1-2" class="hidden alert alert-info alert1 provisional">
 										<p>US - SHORT TRIP</p>
-										<h3 id="us-short-trip">Checklist for short trip only within U.S. and Canada in last 14 days
+										<h3 id="us-short-trip">Checklist for short trip only within U.S. and Canada in
+											last 14 days
 										</h3>
 										<p>Have the following items with you for assessment by a government official at
 											the border (land border
@@ -426,43 +440,42 @@
 												<li class="checkbox">
 													<input type="checkbox" name="receipt" value="1" id="receipt" />
 													<label for="receipt">&nbsp;<a>
-														2.
-														ArriveCAN
-														receipt with letter I or, V, or A beside
-														the vaccinated traveller’s
-														name(s)</a></label>
+															2.
+															ArriveCAN
+															receipt with letter I or, V, or A beside
+															the vaccinated traveller’s
+															name(s)</a></label>
 												</li>
 												<li class="checkbox">
-													<input
-														type="checkbox" name="proof-check-short-us" value="1"
+													<input type="checkbox" name="proof-check-short-us" value="1"
 														id="proof-check-short-us" />
 													<label for="proof-check-short-us">&nbsp;<a>
-														3.
-														proof of vaccinatiothat
-														was uploaded into ArriveCAN
-														(original or paper copy)
+															3.
+															proof of vaccinatiothat
+															was uploaded into ArriveCAN
+															(original or paper copy)
 														</a></label>
 												</li>
 
 
 
 												<li class="checkbox">
-													<input
-														type="checkbox" name="plan-short-us" value="1" id="plan-short-us" />
+													<input type="checkbox" name="plan-short-us" value="1"
+														id="plan-short-us" />
 													<label for="plan-short-us">&nbsp;<a>4.
-																be
-																prepared to explain your quarantine
-																plan </a></label>
+															be
+															prepared to explain your quarantine
+															plan </a></label>
 												</li>
 
 
 												<li class="checkbox">
-													<input
-														type="checkbox" name="doc-short-us" value="1" id="doc-short-us" />
+													<input type="checkbox" name="doc-short-us" value="1"
+														id="doc-short-us" />
 													<label for="doc-short-us">&nbsp;<a>5.
-																same
-																travel document entered in ArriveCAN
-																(e.g. passport)</a></label>
+															same
+															travel document entered in ArriveCAN
+															(e.g. passport)</a></label>
 												</li>
 
 
@@ -489,10 +502,6 @@
 				</div>
 
 
-			</section>
-		</section>
-
-	-->
 
 
 		<div class="pagedetails">
