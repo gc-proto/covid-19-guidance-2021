@@ -37,8 +37,84 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 	<link href="https://travel.gc.ca/vt/dynamic/eng/covid-19-pd/css/checkboxes.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cra-arc.gc.ca/wet-boew/css/custom/steps.css">
-	<!--GAC - custom style sheet per CRA -->
-	<link rel="stylesheet" href="./lana/cra-fieldflow.css">
+
+	<!--GAC - custom styles for CRA field flow custom checklist section -->
+	<style>
+		@charset "utf-8";
+
+		/*Checkbox/Fieldflow radio input sizing,positioning*/
+
+		.fieldflow-lg .radio label {
+			margin-left: 40px;
+		}
+
+		.fieldflow-lg .radio input[type="radio"] {
+			margin-left: -40px;
+		}
+
+		.fieldflow-lg fieldset legend {
+			font-size: 22px;
+			margin-top: 0px;
+		}
+
+		/*Hide arrows in Chrome/FF for number input*/
+		/* Chrome, Safari, Edge, Opera */
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		/* Firefox */
+		input[type="number"] {
+			-moz-appearance: textfield;
+		}
+
+		output.wb-calc {
+			display: inline;
+		}
+
+		/*Validation invisible text appearance */
+		.wb-frmvld #errors-default .wb-inv,
+		.wb-frmvld .has-error .wb-inv {
+			clip: inherit;
+			height: inherit;
+			margin: inherit;
+			overflow: inherit;
+			position: inherit;
+			width: inherit;
+		}
+
+		.wb-frmvld .has-error .wb-inv {
+			color: #333;
+		}
+
+		:not(#wb-srch) main form:not(#gc-pg-hlpfl-frm),
+		main .checkbox,
+		main .checkbox-inline,
+		main .radio,
+		main .radio-inline,
+		main form:not(#gc-pg-hlpfl-frm) :not(.btn-call-to-action).btn,
+		main form :not(.btn-primary).btn {
+			font-size: 20px !important;
+			line-height: 1.65em !important;
+		}
+
+		p {
+			transition: all 1s;
+		}
+
+		p.hidden-action {
+			transform: scaleX(0);
+			overflow: hidden;
+			float: left;
+		}
+
+		p.visible-action {
+			transform: scaleX(1);
+			float: left;
+		}
+	</style>
 
 	<!--[if gte IE 9 | !IE ]><!-->
 	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
@@ -354,7 +430,8 @@
 		<!-- custom checklist section added 12 December 2021 -->
 		<h2 id="entry-vaccinated">Pre-entry testing and ArriveCAN requirements </h2>
 		<p>You must meet
-				<strong>all of these requirements</strong> to qualify as a fully vaccinated traveller.</p>
+			<strong>all of these requirements</strong> to qualify as a fully vaccinated traveller.
+		</p>
 		<section class="gcnav-section">
 			<section>
 				<h3 id="custom-checklist">Get a customized requirements checklist</h3>
@@ -366,7 +443,8 @@
 									<span class="fas fa-square fa-stack-2x fa-inverse"></span> <span
 										class="far fa-user-circle fa-stack-2x"></span></span></div>
 
-							<h3 class="pull-left mrgn-tp-0 mrgn-lft-lg h3 text-info" id="confirm-registration">Answer just 2 questions for your planned arrival:</h3>
+							<h3 class="pull-left mrgn-tp-0 mrgn-lft-lg h3 text-info" id="confirm-registration">Answer
+								just 2 questions for your planned arrival:</h3>
 							<div class="clearfix"></div>
 
 							<div class="mrgn-lft-lg">
@@ -461,15 +539,13 @@
 												<li class="checkbox">
 													<input type="checkbox" name="results-short-us" value="1"
 														id="results-short-us" />
-													<label for="results-short-us"><a
-															href="#timing">1.
+													<label for="results-short-us"><a href="#timing">1.
 															no pre-entry test results required if you return within 72
 															hours</a></label>
 												</li>
 												<li class="checkbox">
 													<input type="checkbox" name="receipt" value="1" id="receipt" />
-													<label for="receipt"><a
-															href="#arrivecan">
+													<label for="receipt"><a href="#arrivecan">
 															2.
 															mandatory ArriveCAN
 															receipt with letter I or, V, or A beside
@@ -479,8 +555,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="proof-check-short-us" value="1"
 														id="proof-check-short-us" />
-													<label for="proof-check-short-us"><a
-															href="#proof">
+													<label for="proof-check-short-us"><a href="#proof">
 															3.
 															proof of vaccination that
 															was uploaded into ArriveCAN
@@ -490,8 +565,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="plan-short-us" value="1"
 														id="plan-short-us" />
-													<label for="plan-short-us"><a
-															href="#quarantine-plan">4.
+													<label for="plan-short-us"><a href="#quarantine-plan">4.
 															have a quarantine
 															plan in case you develop symptoms or test
 															positive</a></label>
@@ -537,16 +611,14 @@
 												<li class="checkbox">
 													<input type="checkbox" name="results-long-us" value="1"
 														id="results-long-us" />
-													<label for="results-long-us"><a
-															href="#pre-entry-test-who">1.
+													<label for="results-long-us"><a href="#pre-entry-test-who">1.
 															pre-entry molecular test results are required for entry
 														</a></label>
 												</li>
 												<li class="checkbox">
 													<input type="checkbox" name="receipt-long-us" value="1"
 														id="receipt-long-us" />
-													<label for="receipt-long-us"><a
-															href="#arriveCAN">2.
+													<label for="receipt-long-us"><a href="#arriveCAN">2.
 															mandatory ArriveCAN
 															receipt with letter I or, V, or A beside
 															the vaccinated traveller’s
@@ -555,8 +627,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="proof-check-long-us" value="1"
 														id="proof-check-long-us" />
-													<label for="proof-check-long-us"><a
-															href="#proof">3.
+													<label for="proof-check-long-us"><a href="#proof">3.
 															proof of vaccination that
 															was uploaded into ArriveCAN
 															(original or paper copy)
@@ -565,8 +636,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="plan-long-us" value="1"
 														id="plan-long-us" />
-													<label for="plan-long-us"><a
-															href="#quarantine-plan">4.
+													<label for="plan-long-us"><a href="#quarantine-plan">4.
 															have a quarantine
 															plan in case you develop symptoms or test positive
 														</a></label>
@@ -609,16 +679,14 @@
 												<li class="checkbox">
 													<input type="checkbox" name="results-non-us-long" value="1"
 														id="results-non-us-long" />
-													<label for="results-non-us-long"><a
-															href="#pre-entry-test-who">1.
+													<label for="results-non-us-long"><a href="#pre-entry-test-who">1.
 															pre-entry molecular test results are required for entry
 														</a></label>
 												</li>
 												<li class="checkbox">
 													<input type="checkbox" name="receipt-non-us-long" value="1"
 														id="receipt-non-us-long" />
-													<label for="receipt-non-us-long"><a
-															href="#arrivecan">2.
+													<label for="receipt-non-us-long"><a href="#arrivecan">2.
 															mandatory ArriveCAN
 															receipt with letter I or, V, or A beside
 															the vaccinated traveller’s
@@ -627,8 +695,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="proof-non-us-long" value="1"
 														id="proof-non-us-long" />
-													<label for="proof-non-us-long"><a
-															href="#proof">3.
+													<label for="proof-non-us-long"><a href="#proof">3.
 															proof of vaccination that
 															was uploaded into ArriveCAN
 															(original or paper copy)
@@ -637,8 +704,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="plan-non-us-long" value="1"
 														id="plan-non-us-long" />
-													<label for="plan-non-us-long"><a
-															href="#quarentine-plan">4.
+													<label for="plan-non-us-long"><a href="#quarentine-plan">4.
 															have a quarantine plan for while you await arrival test
 															results
 															and in case of positive results
@@ -655,8 +721,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="plan-non-us-long" value="1"
 														id="plan-non-us-long" />
-													<label for="plan-non-us-long"><a
-															href="#arrival-test-account">6.
+													<label for="plan-non-us-long"><a href="#arrival-test-account">6.
 															Arriving by plane: register with the arrival test provider
 															in
 															advance to save time at the airport</a></label>
@@ -696,16 +761,14 @@
 												<li class="checkbox">
 													<input type="checkbox" name="results-non-us-short" value="1"
 														id="results-non-us-short" />
-													<label for="results-non-us-short"><a
-															href="#timing">1.
+													<label for="results-non-us-short"><a href="#timing">1.
 															no pre-entry test results required if you return within 72
 															hours</a></label>
 												</li>
 												<li class="checkbox">
 													<input type="checkbox" name="receipt-non-us-short" value="1"
 														id="receipt-non-us-short" />
-													<label for="receipt-non-us-short"><a
-															href="#arrivecan">2.
+													<label for="receipt-non-us-short"><a href="#arrivecan">2.
 															mandatory ArriveCAN
 															receipt with letter I or, V, or A beside
 															the vaccinated traveller’s
@@ -714,8 +777,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="proof-non-us-short" value="1"
 														id="proof-non-us-short" />
-													<label for="proof-non-us-short"><a
-															href="#proof">3.
+													<label for="proof-non-us-short"><a href="#proof">3.
 															proof of vaccination that
 															was uploaded into ArriveCAN
 															(original or paper copy)
@@ -724,8 +786,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="plan-non-us-short" value="1"
 														id="plan-non-us-short" />
-													<label for="plan-non-us-short"><a
-															href="#quarantine-plan">4.
+													<label for="plan-non-us-short"><a href="#quarantine-plan">4.
 															have a quarantine plan for while you await arrival test
 															results
 															and in case of positive results
@@ -742,8 +803,7 @@
 												<li class="checkbox">
 													<input type="checkbox" name="plan-non-us-short" value="1"
 														id="plan-non-us-short" />
-													<label for="plan-non-us-short"><a
-															href="#arrival-test-account">6.
+													<label for="plan-non-us-short"><a href="#arrival-test-account">6.
 															Arriving by plane: register with the arrival test provider
 															in
 															advance to save time at the airport</a></label>
