@@ -256,7 +256,7 @@
 			<a href="https://travel.gc.ca/travel-covid/travel-restrictions/omicron-variant">Follow the temporary
 				enhanced requirements. </a>
 		</p>
-		<!--
+		
 		<div data-wb-urlmapping='{
 					"p=outside-us": { "action": "addClass", "class": "hidden" },
 					"p=us-can": { "action": "addClass", "class": "hidden" }
@@ -272,222 +272,54 @@
 				<p>In the last 14 days, have you been anywhere other than Canada or the
 					U.S.?</p>
 				<ul>
-					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#outside-us", "class": "hidden"}'>Yes</li>
+					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#non-us", "class": "hidden"}'>Yes, I've been in other countries</li>
 	
-					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#us-can", "class": "hidden" }'>No I've only been in Canada and/or the U.S.</li>
+					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#us", "class": "hidden" }'>No </li>
 				</ul>
 			</div>
 
 		</div>
 
 
-		<div data-wb-urlmapping='{ "p=outside-us": { "action": "removeClass", "class": "hidden" } }'
-			class="hidden mrgn-bttm-lg" id="outside-us">
+		<div data-wb-urlmapping='{ "p=non-us": { "action": "removeClass", "class": "hidden" } }'
+			class="hidden mrgn-bttm-lg" id="non-us">
 			<p class="wb-fieldflow-label">Are you a Canadian
-				returning to Canada after a short trip
-				where you were away for 72 hours or
-				less?</br>
-				<span class="small">Canadians include: Canadian citizens,
+				returning after a short trip
+				away for 72 hours or
+				less?<br />
+				<span class="small">Canadians include: Canadian
+					citizens,
 					those registered under
-					the <cite>Indian Act</cite> and permanent residents. </span></p>
-
+					the <cite>Indian Act</cite> and permanent residents.
+				</span>
+			</p>
+				<ul>
+					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#non-us-short-trip", "class": "hidden"}'>Yes, I'm returning to Canada after a short trip</li>
+	
+					<li data-wb-fieldflow='{ "action": "removeClass", "source":"#non-us-long-trip", "class": "hidden" }'>No </li>
+				</ul>
 		</div>
-		<div data-wb-urlmapping='{ "p=us-can": { "action": "removeClass", "class": "hidden" } }'
-		class="hidden mrgn-bttm-lg" id="us-can">
+		<div data-wb-urlmapping='{ "p=us": { "action": "removeClass", "class": "hidden" } }'
+		class="hidden mrgn-bttm-lg" id="us">
 		<p class="wb-fieldflow-label">Are you a Canadian
-			returning to Canada after a short trip
-			where you were away for 72 hours or
-			less?</br>
-			<span class="small">Canadians include: Canadian citizens,
+			returning after a short trip
+			away for 72 hours or
+			less?<br />
+			<span class="small">Canadians include: Canadian
+				citizens,
 				those registered under
-				the <cite>Indian Act</cite> and permanent residents. </span></p>
+				the <cite>Indian Act</cite> and permanent residents.
+			</span>
+		</p>
+			<ul>
+				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#us-short-trip", "class": "hidden"}'>Yes, I'm returning after a short trip to the U.S.</li>
+
+				<li data-wb-fieldflow='{ "action": "removeClass", "source":"#us-long-trip", "class": "hidden" }'>No </li>
+			</ul>
 
 	</div>
--->
-		<section class="gcnav-section">
 
-
-			<p>Answer these questions for your fully vaccinated traveller requirements:</p>
-
-			<div class="row mrgn-bttm-md">
-				<div class="col-xs-12">
-					<div class="brdr-lft mrgn-lft-md mrgn-tp-sm">
-						<div class="pstn-lft-xs pstn-tp-xs"><span class="fa-stack fa-fw mrgn-lft-sm text-info">
-								<span class="fas fa-square fa-stack-2x fa-inverse"></span> <span
-									class="far fa-user-circle fa-stack-2x"></span></span></div>
-
-						<h3 class="pull-left mrgn-tp-0 mrgn-lft-lg h3 text-info" id="confirm-registration">Based on
-							your planned entry or return to Canada:</h3>
-						<div class="clearfix"></div>
-
-						<div class="mrgn-lft-lg">
-
-							<div class="wb-frmvld fieldflow-lg">
-								<form>
-									<div class="wb-fieldflow"
-										data-wb-fieldflow="{&quot;noForm&quot;: true, &quot;isoptional&quot;: true, &quot;renderas&quot;: &quot;radio&quot;, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}"
-										id="have-acct">
-										<p>In the last 14 days, have you been anywhere other than Canada or the
-											U.S.?</p>
-										<ul>
-											<li> Yes
-												<ul>
-													<li
-														data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-1&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">
-														Yes</li>
-													<li> No I've only been in Canada and/or the U.S.
-														<div class="wb-fieldflow-sub"
-															data-wb-fieldflow="{&quot;renderas&quot;: &quot;radio&quot;, &quot;isoptional&quot;: true, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">
-
-															<div class="wb-fieldflow-header">
-
-																<p class="wb-fieldflow-label">Are you a Canadian
-																	returning to Canada after a short trip
-																	where you were away for 72 hours or
-																	less?</br>
-																	<span class="small">Canadians include:
-																		Canadian citizens,
-																		those registered under
-																		the <cite>Indian Act</cite> and
-																		permanent residents. </span>
-																</p>
-															</div>
-
-															<ul>
-																<li
-																	data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-5&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">
-																	Yes</li>
-																<li
-																	data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-4&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">
-																	No</li>
-															</ul>
-														</div>
-
-												</ul>
-
-									</div>
-									</li>
-
-
-									<li> No
-										<div class="wb-fieldflow-sub"
-											data-wb-fieldflow="{&quot;renderas&quot;: &quot;radio&quot;, &quot;isoptional&quot;: true, &quot;reset&quot;: {&quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.alert1&quot;, &quot;class&quot;: &quot;hidden&quot;}}">
-
-											<div class="wb-fieldflow-header">
-												<p class="wb-fieldflow-label">Are you a Canadian
-													returning to Canada after a short trip
-													where you were away for 72 hours or
-													less?</br>
-													<span class="small">Canadians include: Canadian
-														citizens,
-														those registered under
-														the <cite>Indian Act</cite> and permanent residents.
-													</span>
-												</p>
-											</div>
-											<ul>
-												<li
-													data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-2&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">
-													Yes</li>
-												<li
-													data-wb-fieldflow="{&quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;#answer1-3&quot;, &quot;class&quot;: &quot;hidden&quot;, &quot;live&quot;: true}">
-													No</li>
-											</ul>
-										</div>
-
-										</ul>
-							</div>
-							</form>
-
-
-						</div>
-						<div id="answers1">
-							<div id="answer1-1" class="hidden alert alert-danger alert1 provisional">
-								<p>ANSWER - NO ENTRY - NON-US OMICRON COUNTRY</p>
-							</div>
-							<div id="answer1-2" class="hidden alert alert-info alert1 provisional">
-								<p>US - SHORT TRIP</p>
-								<h3 id="us-short-trip">Checklist for short trip only within U.S. and Canada in
-									last 14 days
-								</h3>
-								<p>Have the following items with you for assessment by a government official at
-									the border (land border
-									crossings do not provide WiFi for travellers):</p>
-								<div class="provisional gc-checklist">
-									<ul class="lst-none lst-spcd-2">
-										<li class="checkbox">
-											<input type="checkbox" name="results-short-us" value="1"
-												id="results-short-us" />
-											<label for="results-short-us"><a
-													href="https://travel.gc.ca/travel-covid/travel-restrictions/covid-vaccinated-travellers-entering-canada#pre-entry-test-exempt">1.
-													no pre-entry test results required if you return within 72
-													hours</a></label>
-										</li>
-										<li class="checkbox">
-											<input type="checkbox" name="receipt" value="1" id="receipt" />
-											<label for="receipt">&nbsp;<a>
-													2.
-													ArriveCAN
-													receipt with letter I or, V, or A beside
-													the vaccinated traveller’s
-													name(s)</a></label>
-										</li>
-										<li class="checkbox">
-											<input type="checkbox" name="proof-check-short-us" value="1"
-												id="proof-check-short-us" />
-											<label for="proof-check-short-us">&nbsp;<a>
-													3.
-													proof of vaccinatiothat
-													was uploaded into ArriveCAN
-													(original or paper copy)
-												</a></label>
-										</li>
-
-
-
-										<li class="checkbox">
-											<input type="checkbox" name="plan-short-us" value="1" id="plan-short-us" />
-											<label for="plan-short-us">&nbsp;<a>4.
-													be
-													prepared to explain your quarantine
-													plan </a></label>
-										</li>
-
-
-										<li class="checkbox">
-											<input type="checkbox" name="doc-short-us" value="1" id="doc-short-us" />
-											<label for="doc-short-us">&nbsp;<a>5.
-													same
-													travel document entered in ArriveCAN
-													(e.g. passport)</a></label>
-										</li>
-
-
-
-									</ul>
-								</div>
-
-							</div>
-							<div id="answer1-3" class="hidden alert alert-info alert1 provisional">
-								<p>US - LONG TRIP</p>
-
-							</div>
-							<div id="answer1-4" class="hidden alert alert-info alert1 provisional">
-								<p>NON-US LONG</p>
-							</div>
-						</div>
-						<div id="answer1-5" class="hidden alert alert-info alert1 provisional">
-							<p> NON-US SHORT</p>
-						</div>
-
-					</div>
-				</div>
-			</div>
-			</div>
-
-		</section>
-
-
+		
 		<div class="pagedetails">
 			<dl id="wb-dtmd">
 				<dt>Date modified:</dt>
