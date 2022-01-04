@@ -9,7 +9,7 @@ breadcrumbs:
 dateModified: 2022-01-02
 lang: en
 title: "Report a positive COVID-19 rapid test result"
-contentTitle: Report a COVID-19 rapid test result - Canada.ca
+contentTitle: Report a positive COVID-19 rapid test result - Canada.ca
 ---
 
 <p>Use this service to register your positive result after using a rapid test to check if you're infectious with
@@ -25,29 +25,26 @@ contentTitle: Report a COVID-19 rapid test result - Canada.ca
 </ul>
 <p><strong>Report one positive result at a time, as soon as possible after taking the test.</strong></p>
 <div class="wb-frmvld">
-    <fieldset>
+   
         <form action="#" method="get" id="test-date">
-            ...
             <div class="form-group">
                 <label for="date1"><span class="field-name">Date of test</span><span class="datepicker-format"> (<abbr
                             title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
                 <input class="form-control" id="date1" name="date1" type="date" data-rule-dateISO="true" />
             </div>
-    </fieldset>
-    <fieldset>
+  
         <form action="#" method="get" id="birth-year">
-            ...
             <div class="form-group">
                 <label for="numeric1"><span class="field-name">Year of birth of person tested</span> </label>
                 <input class="form-control" id="numeric1" name="numeric1" type="number" data-rule-digits="true"
                     max="2022" min="1900" maxlength="4" />
             </div>
-    </fieldset>
+   
     <form action="#" method="get" id="validation-example">
         <div class="form-group">
-            <label for="pcodeca1" class="required"><span class="field-name">Postal code</span> </label>
+            <label for="pcodeca1"><span class="field-name">Postal code</span> </label>
             <input class="form-control" id="pcodeca1" name="pcodeca1" type="text" autocomplete="postal-code" size="7"
-                maxlength="7" required="required" data-rule-postalCodeCA="true" />
+                maxlength="7"  data-rule-postalCodeCA="true" />
         </div>
         <!-- </form> -->
 </div>
