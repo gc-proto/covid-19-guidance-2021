@@ -1,7 +1,7 @@
 defaults:
   -
     scope:
-      path: "/travel-2.0", "/sandbox"
+      path: "/travel-2.0, /sandbox"
     values:
       altLangPage: "#"
       css: 
