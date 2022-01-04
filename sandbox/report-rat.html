@@ -37,6 +37,21 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
                     <label for="tel1" ><span class="field-name">Email address to receive summary (optional)</span> </label>
                     <input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel"  data-rule-phoneUS="true" />
                 </div>
+                <div class="form-group">
+                    <label for="reason" ><span class="field-name">Reason for testing:</span></label>
+                    <div class="radio">
+                        <label for="symptoms"><input type="radio" name="symptoms" value="1" id="symptoms"/>&#160;&#160;Symptoms</label>
+                    </div>
+                    <div class="radio">
+                        <label for="exposure"><input type="radio" name="exposure" value="2" id="exposure" />&#160;&#160;Possible exposure</label>
+                    </div>
+                    <div class="radio">
+                        <label for="screen"><input type="radio" name="screen" value="3" id="screen" />&#160;&#160;Asymptomatic screening at work or before a visit</label>
+                    </div>
+                    <div class="radio">
+                        <label for="otherreason"><input type="radio" name="otherreason" value="4" id="otherreason" />&#160;&#160;Other</label>
+                    </div>					
+				</div>
                 <legend>About the positive test</legend>
                 <div class="form-group">
                     <label for="date1"><span class="field-name">Date of positive test</span><span class="datepicker-format"> (<abbr
@@ -57,7 +72,6 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
                     <div class="radio">
                         <label for="other"><input type="radio" name="status" value="4" id="other" />&#160;&#160;Other</label>
                     </div>					
-
 				</div>
                 <div class="form-group">
 					<label for="browser1" ><span class="field-name">Test manufacturer</span></label>
