@@ -33,8 +33,8 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
                         maxlength="7"  data-rule-postalCodeCA="true" />
                 </div>
                 <div class="form-group">
-                    <label for="tel1" class="required"><span class="field-name">Mobile number to recieve confirmation via message</span> </label>
-                    <input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" />
+                    <label for="tel1" class="required"><span class="field-name">Mobile number to receive confirmation text message</span> </label>
+                    <input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel"  data-rule-phoneUS="true" />
                 </div>
                 <legend>About the positive test</legend>
                 <div class="form-group">
@@ -43,7 +43,7 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
                     <input class="form-control" id="date1" name="date1" type="date" data-rule-dateISO="true" />
                 </div>
 				<div class="form-group">
-                    <label for="browser1" class="required"><span class="field-name">Which areas did you swab?</span><strong class="required">(required)</strong></label>
+                    <label for="browser1" class="required"><span class="field-name">Which areas did you swab?</span></label>
                     <div class="radio">
                         <label for="nostrils"><input type="radio" name="status" value="1" id="nostrils"/>&#160;&#160;Both nostrils</label>
                     </div>
@@ -59,7 +59,7 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
 
 				</div>
                 <div class="form-group">
-					<label for="browser1" class="required"><span class="field-name">Test manufacturer</span><strong class="required">(required)</strong></label>
+					<label for="browser1" class="required"><span class="field-name">Test manufacturer</span></label>
 					<select class="form-control" id="browser1" name="browser1" required="required">
 						<option value="abbottbinax">Abbott BinaxNOW</option>
                         <option value="abbottpan">Abbott Panbio</option>
@@ -77,7 +77,16 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
                     <input class="form-control" id="numeric1" name="numeric1" type="text" 
                     data-rule-minlength="4" />
                 </div>
-
+              <div class="form-group">
+                   <label for="file1" ><span class="field-name">Upload a photo of the completed test (just test,no people)</span> </label>
+                  <input id="file1" name="file1" type="file"  />
+             </div>
+                <fieldset>
+                    <legend>Affirmation</legend>
+                    <div class="checkbox">
+                        <label for="affirm"><input type="checkbox" name="affirm" value="1" id="affirm" />&#160;&#160;I affirm that the positive test information is correct</label>
+                    </div>
+                </fieldset>
 			<input type="submit" value="Submit" class="btn btn-primary" >
 		</form>
 	</div>
