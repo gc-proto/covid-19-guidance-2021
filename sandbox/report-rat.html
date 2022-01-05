@@ -25,7 +25,7 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
 <p><strong>Report one positive result per person, as soon as possible after taking the test.</strong></p>
 <div class="wb-frmvld gc-font-2019">
 		<form action="#" method="get" id="validation-example" novalidate>
-			<fieldset>
+				<fieldset class="provisional gc-chckbxrdio">
 				<legend>About the person tested</legend>
                 <div class="form-group">
                     <label for="dobyear"><span class="field-name">Year of birth of person tested</span></label>
@@ -42,18 +42,25 @@ contentTitle: Report a positive COVID-19 rapid test result Canada.ca
                 </div>
                 <div class="form-group">
                     <label for="reason" ><span class="field-name">Reason for testing:</span></label>
-                    <div class="radio">
-                        <label for="symptoms"><input type="radio" name="symptoms" value="1" id="symptoms"/>&#160;&#160;Symptoms</label>
-                    </div>
-                    <div class="radio">
-                        <label for="exposure"><input type="radio" name="exposure" value="2" id="exposure" />&#160;&#160;Possible exposure</label>
-                    </div>
-                    <div class="radio">
-                        <label for="screen"><input type="radio" name="screen" value="3" id="screen" />&#160;&#160;Asymptomatic screening at work or before a visit</label>
-                    </div>
-                    <div class="radio">
-                        <label for="otherreason"><input type="radio" name="otherreason" value="4" id="otherreason" />&#160;&#160;Other</label>
-                    </div>					
+                    
+                    	<ul class="list-unstyled lst-spcd-2">
+                        <li class="radio">
+                            <label for="symptoms"><input type="radio" name="symptoms" value="1" id="symptoms"/>&#160;&#160;Symptoms</label>
+                        </li>
+                        <li class="radio">
+                            <label for="exposure"><input type="radio" name="exposure" value="2" id="exposure" />&#160;&#160;Possible exposure</label>
+                        </li>
+                        <li class="radio">
+                            <label for="screen"><input type="radio" name="screen" value="3" id="screen" />&#160;&#160;Asymptomatic screening at work or before a visit</label>
+                        </li>
+                        <li class="radio">
+                            <label for="otherreason"><input type="radio" name="otherreason" value="4" id="otherreason" />&#160;&#160;Other</label>
+                        </li>		
+                        
+                        
+                        </ul>
+              
+                    			
 				</div>
                 <legend>About the positive test</legend>
                 <div class="form-group">
