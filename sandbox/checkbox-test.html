@@ -11,7 +11,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
-	<title>Arrival wizard - Canada.ca</title>
+	<title>Checkbox test - Canada.ca</title>
 	<meta content="width=device-width,initial-scale=1" name="viewport">
 
 
@@ -276,22 +276,24 @@
 												 <input type="radio" name="symptoms" value="1" id="symptoms"/>
 												 <label for="symptoms">Symptoms</label>
 												 </li>
-										 </ul>
-										 
-		                    <div class="radio">
-		                        <label for="symptoms"><input type="radio" name="symptoms" value="1" id="symptoms"/>&#160;&#160;Symptoms</label>
-		                    </div>
-		                
-		                    <div class="radio">
-		                        <label for="exposure"><input type="radio" name="exposure" value="2" id="exposure" />&#160;&#160;Possible exposure</label>
-		                    </div>
-		                    <div class="radio">
-		                        <label for="screen"><input type="radio" name="screen" value="3" id="screen" />&#160;&#160;Asymptomatic screening at work or before a visit</label>
-		                    </div>
-		                    <div class="radio">
-		                        <label for="otherreason"><input type="radio" name="otherreason" value="4" id="otherreason" />&#160;&#160;Other</label>
-		                    </div>					
+												 
+												 <li class="radio">
+													 <input type="radio" name="exposure" value="2" id="exposure" />
+														<label for="exposure">Possible exposure</label>
+												</li>
+							
+												<li class="radio">
+																		<input type="radio" name="screen" value="3" id="screen" />
+														<label for="screen">Asymptomatic screening at work or before a visit</label>
+												</li>
+												<li class="radio">
+													<input type="radio" name="otherreason" value="4" id="otherreason" />
+														<label for="otherreason">Other</label>
+												</li>		
+										 </ul>     			
 						</div>
+						
+						
 		                <legend>About the positive test</legend>
 		                <div class="form-group">
 		                    <label for="date1"><span class="field-name">Date of positive test</span><span class="datepicker-format"> (<abbr
@@ -300,18 +302,32 @@
 		                </div>
 						<div class="form-group">
 		                    <label for="browser1" ><span class="field-name">Which areas did you swab?</span></label>
-		                    <div class="radio">
-		                        <label for="nostrils"><input type="radio" name="status" value="1" id="nostrils"/>&#160;&#160;Both nostrils</label>
-		                    </div>
-		                    <div class="radio">
-		                        <label for="one-nostril"><input type="radio" name="status" value="2" id="one-nostril" />&#160;&#160;One nostril</label>
-		                    </div>
-		                    <div class="radio">
-		                        <label for="throat-nostrils"><input type="radio" name="status" value="3" id="throat-nostrils" />&#160;&#160;Throat then nostrils</label>
-		                    </div>
-		                    <div class="radio">
-		                        <label for="other"><input type="radio" name="status" value="4" id="other" />&#160;&#160;Other</label>
-		                    </div>					
+												
+												<ul class="list-unstyled lst-spcd-2">
+												 <li class="radio">
+												 <input type="radio" name="symptoms" value="1" id="symptoms"/>
+												 <label for="symptoms">Symptoms</label>
+												 </li>
+												
+												 <li class="radio">
+													 <input type="radio" name="status" value="1" id="nostrils"/>
+ 		                        <label for="nostrils">Both nostrils</label>
+ 		                    </li>
+ 		                    <li class="radio">
+													<input type="radio" name="status" value="2" id="one-nostril" />
+ 		                        <label for="one-nostril">One nostril</label>
+ 		                    </li>
+ 		                    <li class="radio">
+													<input type="radio" name="status" value="3" id="throat-nostrils" />
+ 		                        <label for="throat-nostrils">Throat then nostrils</label>
+ 		                    </li>
+ 		                    <li class="radio">
+													<input type="radio" name="status" value="4" id="other" />
+ 		                        <label for="other">Other</label>
+ 		                    </li>	
+											 </ul>
+												
+		                   				
 						</div>
 		                <div class="form-group">
 							<label for="browser1" ><span class="field-name">Test manufacturer</span></label>
@@ -336,37 +352,26 @@
 		                   <label for="file1" ><span class="field-name">Upload a photo of the completed test (optional)</span> </label>
 		                  <input id="file1" name="file1" type="file"  />
 		             </div>
+								 
 		                <fieldset>
 		                    <legend>Affirmation</legend>
-		                    <div class="checkbox">
-		                        <label for="affirm"><input type="checkbox" name="affirm" value="1" id="affirm" />&#160;&#160;I affirm that the positive test information is correct</label>
+		                    <div class="checkbox provisional gc-chckbxrdio">
+													<input type="checkbox" name="affirm" value="1" id="affirm" />
+		                        <label for="affirm">&#160;&#160;I affirm that the positive test information is correct</label>
 		                    </div>
 		                </fieldset>
+		
+										
+										
 					<input type="submit" value="Submit" class="btn btn-primary" >
+				</fieldset>
+					
 				</form>
 			</div>
+		
 
 
-		<p><strong>Report one positive result per person, as soon as possible after taking the test.</strong></p>
-		<div class="wb-frmvld gc-font-2019">
-				<form action="#" method="get" id="validation-example" novalidate>
-					<fieldset class="provisional gc-chckbxrdio">
-					
-		                <div class="form-group">
-		                    <label for="reason" ><span class="field-name">Reason for testing:</span></label>
-		                   
-											 <ul class="list-unstyled lst-spcd-2">
-											  <li class="radio">
-		                    <input type="radio" name="symptoms" value="1" id="symptoms"/>
-												<label for="symptoms">Symptoms</label>
-		                    </li>
-										</ul>
-								</div>
-								
-							</fieldset>
-						</form>
-
-
+		
 
 
 
