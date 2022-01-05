@@ -1,0 +1,149 @@
+---
+altLangPage: #
+breadcrumbs:
+ - title: Coronavirus disease (COVID-19)
+   link: "https://www.canada.ca/en.html"
+ - title: COVID-19 testing, screening and contact tracing
+   link: "https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/testing-screening-contact-tracing.html"
+dateModified: 2022-01-04
+lang: en
+css: 
+  - https://test.canada.ca/covid-19-guidance-2021/sandbox/provisional-checkbox-radio.css
+title: "Report a positive COVID-19 rapid test result"
+contentTitle: Report a positive COVID-19 rapid test result Canada.ca
+---
+
+<p>Use this service to register your positive result after using a home rapid test. Isolate yourself or your child from others to prevent spreading COVID-19 to others.</p>
+
+<p>Report your positive test result:</p>
+<ul>
+    <li>to have your result included in your area's COVID-19 data</li>
+    <li>so that you have a record of the result</li>
+    <li>to help the Government of Canada learn how best to use rapid test data</li>
+</ul>
+
+<!-- class "gc-font-2019" on the main div surrounding all the items increases the font size -->
+
+<p><strong>Report one positive result per person, as soon as possible after taking the test.</strong></p>
+<div class="wb-frmvld gc-font-2019">
+		<form action="#" method="get" id="validation-example" novalidate>
+				<fieldset class="provisional gc-chckbxrdio">
+				<legend>About the person tested</legend>
+                <div class="form-group">
+                    <label for="dobyear"><span class="field-name">Year of birth of person tested</span></label>
+                    <input class="form-control" id="dobyear" name="dobyear" type="text" size=4 pattern="[0-9]{4}" aria-describedby="dob-desc">
+                </div>
+                <div class="form-group">
+                    <label for="pcodeca1"><span class="field-name">Postal code</span> </label>
+                    <input class="form-control" id="pcodeca1" name="pcodeca1" type="text" autocomplete="postal-code" size="7"
+                        maxlength="7"  data-rule-postalCodeCA="true" />
+                </div>
+                <div class="form-group">
+                    <label for="tel1" ><span class="field-name">Email address to receive summary (optional)</span> </label>
+                    <input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel"  data-rule-phoneUS="true" />
+                </div>
+                <div class="form-group">
+                    <label for="reason" ><span class="field-name">Reason for testing:</span></label>
+                    
+                    <ul class="list-unstyled lst-spcd-2">
+                     <li class="radio">
+                     <input type="radio" name="symptoms" value="1" id="symptoms"/>
+                     <label for="symptoms">Symptoms</label>
+                     </li>
+                     
+                     <li class="radio">
+                       <input type="radio" name="exposure" value="2" id="exposure" />
+                        <label for="exposure">Possible exposure</label>
+                    </li>
+          
+                    <li class="radio">
+                                <input type="radio" name="screen" value="3" id="screen" />
+                        <label for="screen">Asymptomatic screening at work or before a visit</label>
+                    </li>
+                    <li class="radio">
+                      <input type="radio" name="otherreason" value="4" id="otherreason" />
+                        <label for="otherreason">Other</label>
+                    </li>		
+                 </ul>     			
+                        <div class="radio">
+                            <label for="symptoms"><input type="radio" name="symptoms" value="1" id="symptoms"/>&#160;&#160;Symptoms</label>
+                        </div>
+                    
+                        <div class="radio">
+                            <label for="exposure"><input type="radio" name="exposure" value="2" id="exposure" />&#160;&#160;Possible exposure</label>
+                        </div>
+                        <div class="radio">
+                            <label for="screen"><input type="radio" name="screen" value="3" id="screen" />&#160;&#160;Asymptomatic screening at work or before a visit</label>
+                        </div>
+                        <div class="radio">
+                            <label for="otherreason"><input type="radio" name="otherreason" value="4" id="otherreason" />&#160;&#160;Other</label>
+                        </div>					
+                        
+                        
+                  
+                    			
+				</div>
+                <legend>About the positive test</legend>
+                <div class="form-group">
+                    <label for="date1"><span class="field-name">Date of positive test</span><span class="datepicker-format"> (<abbr
+                                title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+                    <input class="form-control" id="date1" name="date1" type="date" data-rule-dateISO="true" />
+                </div>
+				<div class="form-group">
+                    <label for="browser1" ><span class="field-name">Which areas did you swab?</span></label>
+                    <div class="radio">
+                        <label for="nostrils"><input type="radio" name="status" value="1" id="nostrils"/>&#160;&#160;Both nostrils</label>
+                    </div>
+                    <div class="radio">
+                        <label for="one-nostril"><input type="radio" name="status" value="2" id="one-nostril" />&#160;&#160;One nostril</label>
+                    </div>
+                    <div class="radio">
+                        <label for="throat-nostrils"><input type="radio" name="status" value="3" id="throat-nostrils" />&#160;&#160;Throat then nostrils</label>
+                    </div>
+                    <div class="radio">
+                        <label for="other"><input type="radio" name="status" value="4" id="other" />&#160;&#160;Other</label>
+                    </div>					
+				</div>
+                <div class="form-group">
+					<label for="browser1" ><span class="field-name">Test manufacturer</span></label>
+					<select class="form-control" id="browser1" name="browser1" required="required">
+						<option value="abbottbinax">Abbott BinaxNOW</option>
+                        <option value="abbottpan">Abbott Panbio</option>
+                        <option value="artron">Artron self-test</option>
+                        <option value="assure">Assure Tech Ecotest</option>
+                        <option value="bntx">BNTX Rapid Response</option>
+						<option value="lucira">Lucira Check It</option>
+                        <option value="quidel">Quidel Quickvue</option>
+						<option value="sdbiosensor">SD Biosensor COVID-19 Ag</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+                <div class="form-group">
+                    <label for="numeric1"><span class="field-name">Lot or ID number on test package (optional)</span> </label>
+                    <input class="form-control" id="numeric1" name="numeric1" type="text" 
+                    data-rule-minlength="4" />
+                </div>
+              <div class="form-group">
+                   <label for="file1" ><span class="field-name">Upload a photo of the completed test (optional)</span> </label>
+                  <input id="file1" name="file1" type="file"  />
+             </div>
+                <fieldset>
+                    <legend>Affirmation</legend>
+                    <div class="checkbox">
+                        <label for="affirm"><input type="checkbox" name="affirm" value="1" id="affirm" />&#160;&#160;I affirm that the positive test information is correct</label>
+                    </div>
+                </fieldset>
+			<input type="submit" value="Submit" class="btn btn-primary" >
+		</form>
+	</div>
+ 
+
+        <!-- </form> -->
+</div>
+<p><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/prevention-risks/quarantine-isolate-home.html#a3">How to isolate at home</a></p>
+<div class="well mrgn-tp-lg">
+    <p><small><strong>Testing an idea</strong>: This form is not yet collecting and saving your input - it is presented
+            as an idea to assist Canadians.</small></p>
+    <p><small>Something something tell us more ...</small></p>
+
+</div>
